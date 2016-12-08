@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Maria Belgrader</title>
   </head>
   <body>
@@ -72,6 +73,38 @@
       </ol>
       <br>
       <p>Viola! Delicious Pizza!</p>
+    </section>
+
+    <section>
+      <form action="/reviews" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1" checked="checkd">1
+        <input type="radio" name="rating" value="2">2
+        <input type="radio" name="rating" value="3">3
+        <input type="radio" name="rating" value="4">4
+        <input type="radio" name="rating" value="5">5
+        <br>
+
+        <label for="cooking expertise">Cooking expertise:</label>
+        <select id="expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+        <br>
+        <label>Review:<br>
+          <textarea name="review" cols=30 rows=10></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Submit Review">
+
+      </form>
     </section>
 
     <footer>
