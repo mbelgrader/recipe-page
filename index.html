@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Italian pizza recipe with garlic olive oil crust">
     <link rel="stylesheet" type="text/css" href="css_reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Maria Belgrader</title>
 
     <script type="text/javascript" src="external_javascript_example.js"/>
@@ -33,7 +34,7 @@
     <aside>
       <h2>Ingredients</h2>
       <a name="ingredients"></a>
-      <ul>
+      <ul class="ingredients-list">
         <li>Trader Joe's Dough</li>
         <li>Mozzarella Cheese</li>
         <li>Tomato Sauce</li>
@@ -112,7 +113,7 @@
         </select>
         <br>
         <label>Review:<br>
-          <textarea name="review" cols=30 rows=10></textarea>
+          <textarea id="review" name="review" cols=30 rows=10></textarea>
         </label>
         <br>
         <input type="submit" value="Submit Review">
